@@ -1,5 +1,19 @@
 import { assetUrl } from '../lib/assetUrl'
 
+const TYPE_LABELS = {
+  'ice-bath': 'Cold plunge',
+  'compression-boots': 'Compression boots',
+}
+
+const SOURCE_LABELS = {
+  helios: 'Helios Fitness',
+  competitor: 'Competitor',
+}
+
+const priceFormatter = new Intl.NumberFormat('en-SG', {
+  maximumFractionDigits: 2,
+})
+
 function Field({ label, value, suffix = '' }) {
   return (
     <div className="flex justify-between gap-2 border-b border-helios-border/40 py-1 text-sm last:border-0">
@@ -20,21 +34,22 @@ export default function ProductCard({ product }) {
       {product.image && (
         <img
           src={assetUrl(product.image)}
-          alt=""
-          className="aspect-video w-full rounded-lg border border-helios-border object-cover"
+          alt={product.name ? `${product.name} product` : 'Product'}
+          className="aspect-video w-full rounded-lg border border-helios-border bg-white object-contain"
         />
       )}
 
       <header className="flex items-start justify-between gap-3">
         <div>
           <p className="text-xs uppercase tracking-wide text-white/40">
-            {product.type} · {product.source}
+            {TYPE_LABELS[product.type] ?? product.type} ·{' '}
+            {SOURCE_LABELS[product.source] ?? product.source}
           </p>
           <h3 className="text-lg font-semibold text-white">{product.name ?? 'TBC'}</h3>
         </div>
         {product.price !== null && product.price !== undefined && (
           <span className="shrink-0 rounded-full bg-helios-accent/15 px-3 py-1 text-sm font-medium text-helios-accent-soft">
-            ${product.price}
+            Listed {priceFormatter.format(product.price)}
           </span>
         )}
       </header>
