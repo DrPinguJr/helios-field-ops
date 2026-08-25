@@ -1,1 +1,179 @@
-[]
+[
+  {
+    "id": "icebath-teardown-01",
+    "category": "packing",
+    "item": "ice-bath",
+    "phase": "teardown",
+    "order": 1,
+    "title": "Drain the water",
+    "detail": "Plug is at the bottom right side of every ice bath.",
+    "warning": "Stand clear of the faucet before pulling the plug — pressure is high and releases in a flicking motion. Water can gush out and injure you if you're in the pressure point path.",
+    "image": null,
+    "substeps": [
+      { "order": 1, "text": "Locate plug at bottom right." },
+      { "order": 2, "text": "Stand clear of faucet path before opening." },
+      { "order": 3, "text": "At half-empty and only in an open area, flip bath to dump remaining water." },
+      { "order": 4, "text": "Confirm pipes are unplugged before flipping/dumping." }
+    ]
+  },
+  {
+    "id": "icebath-teardown-02",
+    "category": "packing",
+    "item": "ice-bath",
+    "phase": "teardown",
+    "order": 2,
+    "title": "Release the air",
+    "detail": "Deflate the bath. Expect a sudden initial gush of air, then finish deflating manually.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "icebath-teardown-03",
+    "category": "packing",
+    "item": "ice-bath",
+    "phase": "teardown",
+    "order": 3,
+    "title": "Disconnect the pipes",
+    "detail": "Remove the O-ring from the pipes and store it safely. Unscrew the pipes and set them aside.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "icebath-teardown-04",
+    "category": "packing",
+    "item": "ice-bath",
+    "phase": "teardown",
+    "order": 4,
+    "title": "Handle the filters",
+    "detail": null,
+    "warning": null,
+    "image": null,
+    "substeps": [
+      { "order": 1, "text": "Discard the primary filter (used = turns black); rinse with leftover water." },
+      { "order": 2, "text": "Wash and keep the secondary filter — it is not discarded." }
+    ]
+  },
+  {
+    "id": "icebath-teardown-05",
+    "category": "packing",
+    "item": "ice-bath",
+    "phase": "teardown",
+    "order": 5,
+    "title": "Power off and relocate",
+    "detail": "Power off the machine and move it to a safe area.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "icebath-teardown-06",
+    "category": "packing",
+    "item": "ice-bath",
+    "phase": "teardown",
+    "order": 6,
+    "title": "Fold the bath",
+    "detail": "Fold the empty bath and set it aside.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "icebath-teardown-07",
+    "category": "packing",
+    "item": "ice-bath",
+    "phase": "teardown",
+    "order": 7,
+    "title": "Bag it up",
+    "detail": "Pipes go in one bag, bath goes in a separate bag — or hand off to the collection team if present.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "boots-teardown-01",
+    "category": "packing",
+    "item": "compression-boots",
+    "phase": "teardown",
+    "order": 1,
+    "title": "Daily maintenance close",
+    "detail": "For a daily close (not a full pack-down): unplug the generator (no tubes attached) and put it on charge; detach the V-connector; rest the tubes on the chair; unzip the boots fully; wipe down with Febreze and a wet wipe.",
+    "warning": null,
+    "image": null,
+    "substeps": [
+      { "order": 1, "text": "Unplug generator (no tubes attached) → charge." },
+      { "order": 2, "text": "Detach V-connector." },
+      { "order": 3, "text": "Tubes rest on chair." },
+      { "order": 4, "text": "Unzip boots fully." },
+      { "order": 5, "text": "Febreze + wet-wipe down." }
+    ]
+  },
+  {
+    "id": "boots-teardown-02",
+    "category": "packing",
+    "item": "compression-boots",
+    "phase": "teardown",
+    "order": 2,
+    "title": "Full close — disconnect the air-hole tube",
+    "detail": "Do not undo the velcro strap over the 8-air-hole tube — disconnect it from the boot side instead.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "boots-teardown-03",
+    "category": "packing",
+    "item": "compression-boots",
+    "phase": "teardown",
+    "order": 3,
+    "title": "Confirm packed inventory",
+    "detail": "Final packed inventory: charger + wire, generator, V-connector, 2x tube, 2x boot. The chair is optional and packed separately — it is not part of the set.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "boots-teardown-04",
+    "category": "packing",
+    "item": "compression-boots",
+    "phase": "teardown",
+    "order": 4,
+    "title": "Pack into the bag",
+    "detail": "Pack order into the bag, in sequence.",
+    "warning": null,
+    "image": null,
+    "substeps": [
+      { "order": 1, "text": "Boots folded on the crease." },
+      { "order": 2, "text": "Tubes laid: [ //| ]" },
+      { "order": 3, "text": "Generator." },
+      { "order": 4, "text": "V-connector." },
+      { "order": 5, "text": "Charger." },
+      { "order": 6, "text": "Zip." }
+    ]
+  },
+  {
+    "id": "chair-teardown-01",
+    "category": "packing",
+    "item": "chair",
+    "phase": "teardown",
+    "order": 1,
+    "title": "Fold and bring to collection point",
+    "detail": "Fold the chair and bring it to the collection point.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  },
+  {
+    "id": "misc-teardown-01",
+    "category": "packing",
+    "item": "misc",
+    "phase": "teardown",
+    "order": 1,
+    "title": "Misc bag contents",
+    "detail": "Misc bag holds: tissues, charger ports, charger extensions, Febreze spray.",
+    "warning": null,
+    "image": null,
+    "substeps": []
+  }
+]

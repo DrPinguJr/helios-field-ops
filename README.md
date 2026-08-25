@@ -19,10 +19,10 @@ sides.
 
 ## Status
 
-`/src` is scaffolded against the schema. `/data` currently holds empty
-placeholder arrays (`packing.json`, `troubleshooting.json`, `products.json`,
-`usage-guide.json`) — every page renders an empty state until Codex/ChatGPT
-populates them per the build order in the schema doc.
+`/src` is scaffolded against the schema. `/data`: `packing.json`,
+`troubleshooting.json`, and `products.json` are populated; `usage-guide.json`
+is still empty. See [`/data/README.md`](./data/README.md#open-items) for
+what's still missing and why.
 
 ## Getting started
 

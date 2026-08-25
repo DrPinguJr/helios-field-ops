@@ -16,8 +16,36 @@ are in [`/docs/codex-research-handover.md`](../docs/codex-research-handover.md).
 | `usage-guide.json`    | `usage-guide`       | §4 Usage Guide Entry |
 
 Each file is a JSON array of objects matching its schema section exactly.
-Currently all four are placeholder empty arrays (`[]`) pending content from
-Codex/ChatGPT per the build order in the contract doc.
+`packing.json`, `troubleshooting.json`, and `products.json` are populated
+(from teardown/troubleshooting notes and the Singapore market comparison
+research). `usage-guide.json` is still an empty placeholder — see Open items
+below.
+
+## Open items
+
+- **Setup sequences** (ice bath, compression boots) — only teardown has been
+  documented so far.
+- **Compression boot modes 5–8** — undocumented (`mode-5-8` is `"TBC"` in
+  `troubleshooting.json`).
+- **Escalation contact convention** — `boots-switching-off`'s `escalation`
+  currently uses the generic `"Escalate to hardware support."` per the
+  schema's own stated default, since the named-vs-generic decision is still
+  open.
+- **`research_date`** — every entry in `products.json` currently has this
+  `null`. The market research doc it's sourced from doesn't state when it
+  was pulled; a plausible date wasn't invented. Needs the real pull date
+  filled in once known.
+- **`usage-guide.json`** — the market doc's four Re+ contrast protocols
+  (80/20, 50/50, 90/10, Release) don't map cleanly onto the schema's five
+  fixed `context` values; forcing a mapping would mean guessing which
+  context each protocol belongs to. Left unpopulated pending a decision on
+  how (or whether) to represent multi-step protocols in this schema.
+- **Studio/bathhouse comparison data** (Section 3 of the market doc) — no
+  schema category covers this; not converted.
+- **`image`** — every entry currently has this `null`. The available image
+  library ([`/public/images`](../public/images/README.md)) has generic
+  filenames with no per-product or per-step labels, so nothing in it can be
+  confidently matched to a specific `id` without guessing.
 
 ## Rules (from the contract — repeated here for convenience)
 

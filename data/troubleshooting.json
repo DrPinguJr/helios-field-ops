@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "id": "icebath-not-cold",
+    "category": "troubleshooting",
+    "item": "ice-bath",
+    "symptom": "Not cold",
+    "causes": [
+      {
+        "cause": "Generator overheated",
+        "fix": "Turn off the temp switch and let the generator cool.",
+        "detail": null
+      },
+      {
+        "cause": "Power extender overheated",
+        "fix": "Swap the power cable.",
+        "detail": null
+      },
+      {
+        "cause": "Generator turned off",
+        "fix": "Turn it back on.",
+        "detail": null
+      },
+      {
+        "cause": "Overuse — temperature hasn't been lowered",
+        "fix": "Lower the target temperature; drop in 1–2 ice bags.",
+        "detail": null
+      }
+    ],
+    "escalation": null
+  },
+  {
+    "id": "boots-not-full-leg",
+    "category": "troubleshooting",
+    "item": "compression-boots",
+    "symptom": "Not pumping full leg",
+    "causes": [
+      {
+        "cause": "Wrong mode selected",
+        "fix": "Set to Mode 4 for full leg.",
+        "detail": {
+          "mode-1": "Ankle only",
+          "mode-2": "Foot to calf",
+          "mode-3": "Thigh only",
+          "mode-4": "Full leg",
+          "mode-5-8": "TBC — not yet documented"
+        }
+      },
+      {
+        "cause": "Air hole disconnected from boot",
+        "fix": "Reconnect / plug back in.",
+        "detail": null
+      }
+    ],
+    "escalation": null
+  },
+  {
+    "id": "boots-switching-off",
+    "category": "troubleshooting",
+    "item": "compression-boots",
+    "symptom": "Keeps switching off",
+    "causes": [
+      {
+        "cause": "Generator battery dead",
+        "fix": "Swap the battery and put it on charge.",
+        "detail": null
+      },
+      {
+        "cause": "Generator hardware fault",
+        "fix": "Swap the unit.",
+        "detail": null
+      }
+    ],
+    "escalation": "Escalate to hardware support."
+  }
+]
