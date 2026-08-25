@@ -1,3 +1,5 @@
+import { assetUrl } from '../lib/assetUrl'
+
 function Field({ label, value, suffix = '' }) {
   return (
     <div className="flex justify-between gap-2 border-b border-helios-border/40 py-1 text-sm last:border-0">
@@ -15,6 +17,14 @@ export default function ProductCard({ product }) {
       id={product.id}
       className="scroll-mt-24 space-y-2 rounded-xl border border-helios-border bg-helios-surface p-4"
     >
+      {product.image && (
+        <img
+          src={assetUrl(product.image)}
+          alt=""
+          className="aspect-video w-full rounded-lg border border-helios-border object-cover"
+        />
+      )}
+
       <header className="flex items-start justify-between gap-3">
         <div>
           <p className="text-xs uppercase tracking-wide text-white/40">

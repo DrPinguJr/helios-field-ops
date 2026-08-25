@@ -3,7 +3,8 @@
 This directory is content-only. The full contract (field names, allowed
 values, null-handling rules) lives at
 [`/docs/content-schema.md`](../docs/content-schema.md) — read that before
-editing anything here.
+editing anything here. Research/conversion process and image-matching rules
+are in [`/docs/codex-research-handover.md`](../docs/codex-research-handover.md).
 
 ## Files
 
@@ -29,3 +30,8 @@ Codex/ChatGPT per the build order in the contract doc.
   whenever a factual field is populated, since market data ages.
 - Do not edit `/src`. Components there read this directory; they don't
   hardcode content.
+- `image` (packing, product) is a path relative to `/public`, no leading
+  slash, e.g. `"images/01_cold_plunge_products/helios_marketing_7.webp"`.
+  See [`/public/images/README.md`](../public/images/README.md) for what's
+  available and the matching rules — only set it when the product/step
+  identity is actually confirmed, `null` otherwise.

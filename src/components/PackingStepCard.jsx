@@ -1,3 +1,4 @@
+import { assetUrl } from '../lib/assetUrl'
 import Warning from './Warning'
 
 export default function PackingStepCard({ step }) {
@@ -31,7 +32,7 @@ export default function PackingStepCard({ step }) {
       )}
 
       {step.image && (
-        <img src={step.image} alt="" className="rounded-lg border border-helios-border" />
+        <img src={assetUrl(step.image)} alt="" className="rounded-lg border border-helios-border" />
       )}
     </article>
   )

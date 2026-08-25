@@ -48,6 +48,14 @@ static hosting doesn't need a deep-link rewrite rule.
 ## Adding content
 
 See [`/data/README.md`](./data/README.md) and
-[`/docs/content-schema.md`](./docs/content-schema.md) for the field contract.
-Short version: every object needs every key from its schema; unresearched
-fields are `null`, never omitted or invented.
+[`/docs/content-schema.md`](./docs/content-schema.md) for the field contract,
+and [`/docs/codex-research-handover.md`](./docs/codex-research-handover.md)
+for the research-to-JSON conversion process. Short version: every object
+needs every key from its schema; unresearched fields are `null`, never
+omitted or invented.
+
+## Image assets
+
+`/public/images` holds the curated Helios image library, sorted by category.
+See [`/public/images/README.md`](./public/images/README.md) for what's in
+each folder and the `image` field path convention.
