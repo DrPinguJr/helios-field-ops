@@ -13,12 +13,12 @@ handoff:
 | `04_equipment_accessories/` | Supporting equipment, accessories, unconfirmed shots | use carefully — don't assign unless the match is clear |
 | `05_brand_assets/` | Logos, brand visuals | branding sections only |
 
-Filenames (`helios_marketing_N.ext`) are generic — they identify neither a
-specific product nor a `data/*.json` entry. Matching a specific image to a
-specific product `id` is a content decision (Codex's "image linking pass",
-step 6 in the handover doc's recommended workflow) that has to happen after
-product entries actually exist and their identity is confirmed from
-research — not from how an image looks. `/src` won't guess that mapping.
+Several Helios-owned assets now have descriptive filenames and visible Helios
+branding. Confirmed product-family images may be linked from `/data`; generic
+or ambiguous files must remain unmapped. The cold-plunge photos do not label
+the Active and Turbo chiller variants, so the shared system photo is used for
+both rather than assigning an unverified variant identity. `/src` does not
+guess image mappings.
 
 ## Format note
 
@@ -35,7 +35,7 @@ An `image` field in `/data` should hold a path **relative to this
 directory's parent (`/public`), with no leading slash** — e.g.:
 
 ```json
-"image": "images/01_cold_plunge_products/helios_marketing_7.webp"
+"image": "images/01_cold_plunge_products/Icebathandgenerator.png"
 ```
 
 Components resolve it via `src/lib/assetUrl.js`, which prefixes the app's

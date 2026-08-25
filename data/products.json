@@ -10,7 +10,7 @@
     "capacity_liters": null,
     "temp_range_c": null,
     "notes": "0.8 HP chiller. Cools, circulates, and cleans water via 3-stage filtration. Standard, Barrel, or XL drop-stitch tub options. Optimized for indoor or shaded, well-ventilated balcony setups; hoses are external/loose. Also available on rental: 1mo S$528/mo, 3mo S$477/mo, 6mo S$377/mo, 12mo S$288/mo — Active or Turbo config, any tub size.",
-    "image": null,
+    "image": "images/01_cold_plunge_products/Icebathandgenerator.png",
     "research_date": null
   },
   {
@@ -24,7 +24,7 @@
     "capacity_liters": null,
     "temp_range_c": null,
     "notes": "1.0 HP chiller — same circulation/filtration features as the Active, higher compressor power. Standard, Barrel, or XL tub options. Built for tropical/outdoor use, resists unshaded solar gain. Rental pricing: same tiers as helios-coldplunge-active.",
-    "image": null,
+    "image": "images/01_cold_plunge_products/Icebathandgenerator.png",
     "research_date": null
   },
   {
@@ -220,7 +220,7 @@
     "capacity_liters": null,
     "temp_range_c": null,
     "notes": "Multiple air chambers, sequential non-overlapping design. Requires wall power connection — no stated battery life. Central console panel with manual push buttons, standard localized manual settings (no app). Lightweight, portable sleeves; carry case not standard.",
-    "image": null,
+    "image": "images/02_compression_boots/Compression Boots.png",
     "research_date": null
   },
   {

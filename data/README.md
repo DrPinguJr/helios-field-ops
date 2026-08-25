@@ -42,10 +42,12 @@ below.
   how (or whether) to represent multi-step protocols in this schema.
 - **Studio/bathhouse comparison data** (Section 3 of the market doc) — no
   schema category covers this; not converted.
-- **`image`** — every entry currently has this `null`. The available image
-  library ([`/public/images`](../public/images/README.md)) has generic
-  filenames with no per-product or per-step labels, so nothing in it can be
-  confidently matched to a specific `id` without guessing.
+- **`image`** — the three Helios product entries now use confirmed,
+  Helios-branded product-family images from
+  [`/public/images`](../public/images/README.md). The same shared cold-plunge
+  system photo represents both Active and Turbo because the available photos
+  do not identify their chiller variant. Competitor and packing images remain
+  `null` unless their identity can be confirmed without guessing.
 
 ## Rules (from the contract — repeated here for convenience)
 
