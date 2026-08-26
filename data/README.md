@@ -55,6 +55,8 @@ below.
   doesn't cover a field, set it to `null` — never omit the key, never invent
   a plausible-sounding value.
 - `warning` (packing) is always its own field, never folded into `detail`.
+- Packing steps sharing the same `item`, `phase`, and `sequence` form one
+  connected workflow. `order` restarts at 1 for each separate sequence.
 - `causes` (troubleshooting) is always an array, even for a single cause.
 - `research_date` (product) marks when a data point was pulled — required
   whenever a factual field is populated, since market data ages.

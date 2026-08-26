@@ -15,13 +15,13 @@ export default function NavBar() {
         <NavLink to="/" className="shrink-0 text-lg font-semibold text-white">
           Helios <span className="text-helios-accent">Field Ops</span>
         </NavLink>
-        <nav className="flex flex-wrap gap-1 text-sm">
+        <nav className="flex w-full gap-1 overflow-x-auto pb-1 text-xs [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:w-auto sm:flex-wrap sm:pb-0 sm:text-sm">
           {links.map((link) => (
             <NavLink
               key={link.to}
               to={link.to}
               className={({ isActive }) =>
-                `rounded-md px-3 py-1.5 transition-colors ${
+                `shrink-0 rounded-md px-2 py-1.5 transition-colors sm:px-3 ${
                   isActive
                     ? 'bg-helios-accent/15 text-helios-accent-soft'
                     : 'text-white/60 hover:bg-white/5 hover:text-white'

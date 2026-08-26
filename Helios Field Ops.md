@@ -43,7 +43,7 @@ data/*.json -> src/lib/data.js -> route pages -> reusable cards
 - `src/components/Layout.jsx` provides the shared navigation and page container.
 - `src/lib/data.js` is the only intended import seam between `src/` and `data/`.
 - `src/lib/search.js` builds its Fuse index once when the module loads.
-- The Products page first separates Cold Plunges from Compression Boots, then presents Helios Fitness and competitor products in distinct comparison columns.
+- The Products page first separates Cold Plunges from Compression Boots. Desktop presents Helios Fitness and competitors in side-by-side columns. Mobile uses two stacked whole-panel switchers with Helios on top and other brands below; cards stay image-free while minimized and open into a full-screen detail view.
 - `vite.config.js` uses `/helios-field-ops/` as the production base path.
 - `.github/workflows/deploy.yml` deploys `dist/` to GitHub Pages when `main` is pushed.
 
@@ -51,7 +51,7 @@ data/*.json -> src/lib/data.js -> route pages -> reusable cards
 
 | Dataset | Entries | Notes |
 | --- | ---: | --- |
-| `data/packing.json` | 13 | Teardown only: 7 ice-bath, 4 compression-boots, 1 chair, 1 misc |
+| `data/packing.json` | 13 | Five explicit workflows: ice-bath teardown; boots daily close and full teardown; chair collection; misc inventory |
 | `data/troubleshooting.json` | 3 | Includes one generic hardware escalation |
 | `data/products.json` | 22 | 3 Helios and 19 competitors; 15 ice baths and 7 compression boots |
 | `data/usage-guide.json` | 0 | Awaiting a schema decision for multi-step contrast protocols |
@@ -67,6 +67,10 @@ All populated records had exact documented top-level keys and unique IDs when la
 5. Only map an image when its identity is confirmed.
 6. Record a real `research_date` for time-sensitive market data.
 7. Preserve uncertainty and explain source conflicts in `notes`.
+
+Packing records also use `sequence` to express workflow membership. Matching
+`item`, `phase`, and `sequence` values are one connected ordered path; a new
+`sequence` is a separate routine.
 
 ## Known gaps and risks
 

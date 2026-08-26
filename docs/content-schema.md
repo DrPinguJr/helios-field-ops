@@ -24,6 +24,7 @@ Type: Static SPA (Vite + React + Tailwind + Fuse.js), deployed via GitHub Pages,
   "category": "packing",
   "item": "ice-bath",
   "phase": "teardown",
+  "sequence": "full-teardown",
   "order": 1,
   "title": "Drain the water",
   "detail": "Plug is at the bottom right side of every ice bath.",
@@ -41,6 +42,11 @@ Type: Static SPA (Vite + React + Tailwind + Fuse.js), deployed via GitHub Pages,
 Field notes:
 - `phase`: `"teardown"` | `"setup"` (setup steps use the same shape, reverse order — not yet written, placeholder until confirmed)
 - `item`: `"ice-bath"` | `"compression-boots"` | `"chair"` | `"misc"`
+- `sequence`: stable kebab-case workflow identifier. Steps with the same
+  `item`, `phase`, and `sequence` are one connected workflow and must be
+  completed in `order`. A different `sequence` is a separate routine, not the
+  next step in the previous workflow.
+- `order`: position inside its `sequence`, starting at 1.
 - `warning`: null if no safety-relevant note; otherwise always its own field, never buried in `detail`.
 
 ---
